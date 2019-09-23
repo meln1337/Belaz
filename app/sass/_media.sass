@@ -1,0 +1,126 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+    .info
+        .col-lg-6
+            width: 500px
+    
+    section.price
+        input.price__tel
+            width: 190px
+            font-size: 12px
+        input.price__email
+            width: 190px !important
+        .email__img
+            padding: 10px
+            padding-right: 30px
+        .col-md-auto
+            button.price__get__btn
+                width: 250px
+                font-size: 12px
+        
+
+// ≥768px
++media-breakpoint-down(sm)
+    .header__logo p
+        display: none
+    .header__logo
+        width: auto
+    header .header__work
+        width: auto
+        p
+            font-size: 12px
+            margin-bottom: 0 !important
+    .header-contacts-wrapper
+        width: auto
+        .contacts
+            font-size: 14px
+    section.price
+        .price__to__email__wrapper
+            justify-content: center !important
+            flex-direction: row !important
+            .col-md-auto
+                width: auto
+                button.price__get__btn
+                    width: 185px
+        .row
+            .email__img-2
+                height: 70px !important
+                margin-top: 20px !important
+            .price__get
+                justify-content: center !important
+                h1
+                    text-align: center
+            .col-md-12
+                flex-direction: column !important
+                justify-content: center !important
+            input.price__tel
+                width: 100% !important
+                font-size: 12px
+                margin-left: 0
+                margin-top: 20px
+            input.price__email
+                width: 100% !important
+                font-size: 12px
+            .price__inputs
+                margin-top: 40px
+
+
+// ≥576px
++media-breakpoint-down(xs)
+    header .header-btn button
+        padding: 15px calc(100vw / 20)
+        width: 140px
+        font-size: 8px
+    header .header__work
+        display: none !important
+    header .contacts a
+        font-size: calc(100vw / 37.64) !important
+    .header__wrapper
+        justify-content: center !important
+    section.info
+        .row
+            justify-content: center
+        .yellow
+            h1
+                font-size: 30px
+            p
+                font-size: 14px
+    section.price
+        h1
+            font-size: 20px
+        .price__to__email__wrapper
+            justify-content: center !important
+            margin-top: 30px
+            .col-md-auto
+                P
+                    font-size: 10px
+                    margin-left: 0
+                img
+                    display: none
+                button.price__get__btn
+                    width: 100px !important
+                    font-size: 10px
+                    height: 50px
+                    margin-left: 0
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
