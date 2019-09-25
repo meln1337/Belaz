@@ -8,10 +8,6 @@
 
 // ≥992px
 +media-breakpoint-down(md)
-    .info
-        .col-lg-6
-            width: 500px
-    
     section.price
         input.price__tel
             width: 190px
@@ -25,6 +21,9 @@
             button.price__get__btn
                 width: 250px
                 font-size: 12px
+    section.spare__parts
+        .col-md-12 > div > p
+            font-size: 16px
         
 
 // ≥768px
@@ -71,6 +70,12 @@
                 font-size: 12px
             .price__inputs
                 margin-top: 40px
+    section.spare__parts
+        .col-md-12 > div >
+            img
+                height: 70px
+            p
+                font-size: 12px
 
 
 // ≥576px
@@ -89,10 +94,27 @@
         .row
             justify-content: center
         .yellow
+            height: 1150px
             h1
-                font-size: 30px
-            p
-                font-size: 14px
+                font-size: calc(100vw / 13)
+                text-align: center
+            h4
+                font-size: calc(100vw / 18)
+                text-align: center
+            .titles nav
+                margin-top: 60px
+                .d-flex
+                    justify-content: center !important
+                    align-items: center !important
+                    flex-direction: column
+                    p
+                        font-size: calc(100vw / 23)
+                        text-align: center
+                        margin-top: 20px
+                        margin-left: 0
+                    img
+                        width: 40px
+                        height: 40px
     section.price
         h1
             font-size: 20px
@@ -110,6 +132,23 @@
                     font-size: 10px
                     height: 50px
                     margin-left: 0
+                    margin-right: 0
+    section.spare__parts
+        height: 1250px
+        h1
+            text-align: center
+            font-size: 30px
+        .col-md-12
+            flex-direction: column
+            margin-top: 90px
+            div
+                margin-top: 40px
+                img
+                    height: 70px
+                p
+                    font-size: 18px
+
+
 
 /*==========  Mobile First  ==========*/
 
