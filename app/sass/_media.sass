@@ -5,6 +5,15 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+    section.the__part
+        .inputs
+            justify-content: center
+            .article
+                width: 260px !important
+            .price__tel
+                width: 180px !important
+            .know__price
+                width: 260px !important
 
 // ≥992px
 +media-breakpoint-down(md)
@@ -24,6 +33,28 @@
     section.spare__parts
         .col-md-12 > div > p
             font-size: 16px
+    section.the__part
+        .inputs
+            > .d-flex
+                width: 100%                
+            .article
+                width: 100% !important
+            .know__price
+                width: 100% !important
+                margin-left: 0
+                height: 70px
+                margin-top: 10px
+            .price__tel
+                width: 100% !important
+                margin-left: 0
+                margin-top: 10px
+            .well__call
+                display: none
+            .ill__call
+                display: none
+            .email__img
+                height: 70px
+                margin-top: 10px
         
 
 // ≥768px
@@ -76,6 +107,9 @@
                 height: 70px
             p
                 font-size: 12px
+    section.the__part
+        h1
+            text-align: center
 
 
 // ≥576px
@@ -147,6 +181,22 @@
                     height: 70px
                 p
                     font-size: 18px
+    section.the__part
+        .inputs
+            .article
+                margin-left: 10px
+                margin-right: 10px
+            .price__tel
+                margin-left: 10px
+            .email__img
+                margin-right: 10px !important
+            .know__price
+                margin-left: 10px
+                margin-right: 10px
+        p
+            font-size: 16px
+        h1
+            font-size: 24px
 
 
 
